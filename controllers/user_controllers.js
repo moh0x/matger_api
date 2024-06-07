@@ -130,7 +130,7 @@ const sendResetCodeFunc = async(req,res)=>{
                    }
                  });
                 
-                 res.status(200).json({"status":httpsStatus.SUCCESS,"data":retUser});
+                 res.status(200).json({"status":httpsStatus.SUCCESS,"data":user});
    } else {
        res.status(400).json({"status":httpsStatus.FAIL,"data":null,"message":"we don't have user with this email"});
    }
