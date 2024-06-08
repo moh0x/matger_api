@@ -6,6 +6,12 @@ const categoriesSchema = new mongoose.Schema({
         minLength:3,
         maxLength:30
     },
+    categoryNameArabic:{
+        type:String,
+        required:true,
+        minLength:3,
+        maxLength:30
+    },
     categoryDescArabic:{
         type:String,
         required:true,
