@@ -8,7 +8,11 @@ var cors = require('cors');
 app.use(cors());
 app.use(express.json());
 const userRoute = require('./routes/user_routes');
+const categoryRoute = require('./routes/home/catgories_routes');
+const bannerRoute = require('./routes/home/banners_routes');
 app.use('/api/users/',userRoute);
+app.use('/api/home/categories',categoryRoute);
+app.use('/api/home/banners',bannerRoute);
 app.listen(port);
  mongoose.connect("mongodb+srv://mihoyahou:YzFN4ccF8u7HkKHi@cluster0.jjdh5dp.mongodb.net/");
 /*
